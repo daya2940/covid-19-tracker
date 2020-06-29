@@ -1,0 +1,11 @@
+
+  <mat-card *ngFor="let item of data | keyvalue">
+    <mat-card-title>{{item.key}}</mat-card-title>
+    <mat-card-content>
+      <p>Confirmed <span class="ml-2">{{item.value.total?.confirmed}}</span></p>
+      <p>Recovered<span class="ml-3">{{item.value.total?.recovered}}</span></p>
+      <p>Deceased<span class="ml-3">{{item.value.total?.deceased}}</span></p>
+      <p>Tested<span class="ml-3">{{item.value.total?.tested}}</span></p>
+    </mat-card-content>
+  </mat-card>
+
